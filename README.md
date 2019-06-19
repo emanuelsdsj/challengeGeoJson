@@ -1,11 +1,11 @@
-Primeiro queria agradecer por esse challenge, aprendi muita coisa =)
+Primeiro queria agradecer por esse challenge, pois aprendi muita coisa =)
 
 Nunca trabalhei com GeoJSON, mas nada que uma estudada na documentação do Django, GeoDjango e GeoJSON não resolvesse o problema.
 
-Eu decidi apenas fazer a API como vocês pediram, logo não fiz a interface, testei com a interface padrão do Django Rest Framework e do Admin Django e também testei com o Postman.
+Eu decidi apenas fazer a API como vocês pediram, logo não fiz a interface, testei com a interface padrão do Django Rest Framework e do Admin Django, e também testei com o Postman.
 
-Os maiores problemas que encontrei foram configurar o ambiente para usar a lib que me permitia salvar no banco o MultiPolygon e o Point, essa lib foi o GDAL e como eu uso o ArchLinux, precisei instalar o GDAL e suas dependências, por isso não precisei usar o pip install. 
-Não sei como configurar no Windows, Ubuntu e Mac, mas acredito que seja mais simples.
+O maior problema que encontrei foi em configurar o ambiente para usar uma das libs que me permitia salvar no banco o MultiPolygon e o Point, pois a documentação não condiz com a realidade, essa lib foi o GDAL e como eu uso o ArchLinux, precisei instalar o GDAL e suas dependências, por isso não precisei usar o pip install. 
+Não sei se esse problema também ocorre no Windows, Ubuntu e Mac, mas acredito que seja mais simples.
 
 
 # config básica
