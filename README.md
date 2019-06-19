@@ -24,7 +24,7 @@ instala os packages:
 
 eu usei o postgreSQL, não testei outras databases.
 É necessário mudar no settings.py, caso use o postgres só precisa mudar o name, user e password.
-
+```
 $ DATABASES = {
 $     'default': {
 $         'ENGINE': 'django.contrib.gis.db.backends.postgis',
@@ -33,7 +33,7 @@ $         'USER': 'postgres',
 $         'PASSWORD': 'teste159753',
 $     }
 $ }
-
+```
 Iniciar:
 
 - python manage.py runserver
@@ -62,7 +62,7 @@ Para criar um partner pode ser através de uma requisição POST para o url que 
 
 Não precisa do id.
 Exemplo:
-
+```
 $ {
 $    "tradingName": "Adega Pinheiros",
 $    "ownerName": "Joao Maradona",
@@ -161,14 +161,14 @@ $        -22.958384
 $        ]
 $    }
 $ }
-
+```
 ou, utilizando o admin do django que é uma interface bem simples de entender.
 
 - /admin/
 
 Para criar um super user para logar no admin:
 
-$ python manage.py createsuperuser
+  $ python manage.py createsuperuser
 
 # Serviços de testes - JSON direto da url:
 https://raw.githubusercontent.com/ZXVentures/code-challenge/master/files/pdvs.json
