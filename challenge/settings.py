@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 # Change the name, user e password
 DATABASES = {}
 db_from_env = dj_database_url.config()
-DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+#DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 DATABASES['default'].update(db_from_env)
 
 # Password validation
