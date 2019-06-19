@@ -92,6 +92,9 @@ DATABASES = {
 #DATABASES['default'].update(db_from_env)
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+DATABASES['default']['NAME'] = 'de0otnc1l9s175'
+DATABASES['default']['USER'] = 'gakydrdrziabkt'
+DATABASES['default']['PASSWORD'] = 'c22c001b40521f7a0de1da21c9fc2b0891af130d0bc47fee69c6d036fd3b6acf'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
