@@ -54,6 +54,7 @@ Retorna partner por id:
 Retorna o partner mais próximo dado uma localização específica:
 
 <<str:lat>> = latitude = string
+
 <<str:lon>> = longitude = string
 
 - /partners/closest/<<str:lat>>/<<str:lon>>/
@@ -187,8 +188,9 @@ Retorna partner por id:
 
 Retorna o partner mais próximo dado uma localização específica:
 
-<<str:lat>> = latitude
-<<str:lon>> = longitude
+<<str:lat>> = latitude = string
+
+<<str:lon>> = longitude = string
 
 - /gitjson/closest/<<str:lat>>/<<str:lon>>/
 
