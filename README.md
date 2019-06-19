@@ -45,16 +45,18 @@ Retorna todos os partners:
 
 - /partners/
 
-Retorna partner por id: 
-<int:pk> = id = integer
+Retorna partner por id:
 
-- /partners/<int:pk>/
+<<int:pk>> = id = integer
 
-Retorna o partner mais próximo dado uma localização específica: 
-<str:lat> = latitude = string
-<str:lon> = longitude = string
+- /partners/<<int:pk>>/
 
-- /partners/closest/<str:lat>/<str:lon>/
+Retorna o partner mais próximo dado uma localização específica:
+
+<<str:lat>> = latitude = string
+<<str:lon>> = longitude = string
+
+- /partners/closest/<<str:lat>>/<<str:lon>>/
 
 Para criar um partner pode ser através de uma requisição POST para o url que retorna todos os partners: 
 
@@ -178,15 +180,17 @@ Retorna todos os partners:
 - /gitjson/
 
 Retorna partner por id:
-<int:pk> = id = integer
 
-- /gitjson/<int:pk>/
+<<int:pk>> = id = integer
 
-Retorna o partner mais próximo dado uma localização específica: 
-<str:lat> = latitude
-<str:lon> = longitude
+- /gitjson/<<int:pk>>/
 
-- /gitjson/closest/<str:lat>/<str:lon>/
+Retorna o partner mais próximo dado uma localização específica:
+
+<<str:lat>> = latitude
+<<str:lon>> = longitude
+
+- /gitjson/closest/<<str:lat>>/<<str:lon>>/
 
 Não fiz requisição POST nos testes.
 
