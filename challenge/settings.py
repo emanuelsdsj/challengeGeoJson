@@ -85,6 +85,7 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'de0otnc1l9s175',
     }
 }
 db_from_env = dj_database_url.config()
