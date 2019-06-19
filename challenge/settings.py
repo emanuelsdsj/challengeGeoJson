@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 GEOS_LIBRARY_PATH = os.environ.get('GEOS_LIBRARY_PATH')
 GDAL_LIBRARY_PATH = os.environ.get('GDAL_LIBRARY_PATH')
@@ -28,7 +29,7 @@ SECRET_KEY = 'y$@5=#l$bd2em=s2a6!-e)ljlbts7d*73mg7o5eicgde0ir^ba'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [['atmablogapp.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
