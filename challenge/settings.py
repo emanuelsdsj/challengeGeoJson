@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+import dj_database_url
 
 GEOS_LIBRARY_PATH = os.environ.get('GEOS_LIBRARY_PATH')
 GDAL_LIBRARY_PATH = os.environ.get('GDAL_LIBRARY_PATH')
@@ -81,14 +82,6 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # Change the name, user e password
-DATABASES = {
-    'default': {
-         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-         'NAME': 'df8grilmgkloqn',
-         'USER': 'kajcfbffbgmbke',
-         'PASSWORD': 'ded4e5960b040c7881f0e14001d44859b8f35f7a89c19f6091b5e44551a23db2',
-     }
-}
 #DATABASES = {
 #    'default': {
 #         'ENGINE': 'django.contrib.gis.db.backends.postgis',
@@ -97,7 +90,8 @@ DATABASES = {
 #         'PASSWORD': 'teste159753',
 #     }
 #}
-
+DATABASES['default'] = dj_database_url.config()
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 
 # Password validation
