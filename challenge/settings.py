@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.contrib.gis.db.backends.postgis',
-         'NAME': 'd2lboamplh8hc7',
-         'USER': 'znfqsssvjksjuy',
-         'PASSWORD': '11e5d9ffce263fab71c319ff81b8a54ead4a579a053026d762f17e62e880dcb2',
+         'NAME': 'df8grilmgkloqn',
+         'USER': 'kajcfbffbgmbke',
+         'PASSWORD': 'ded4e5960b040c7881f0e14001d44859b8f35f7a89c19f6091b5e44551a23db2',
      }
 }
 #DATABASES = {
