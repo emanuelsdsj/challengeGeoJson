@@ -168,7 +168,7 @@ ou, utilizando o admin do django que é uma interface bem simples de entender.
 
 Para criar um super user para logar no admin:
 
-  $ python manage.py createsuperuser
+- python manage.py createsuperuser
 
 # Serviços de testes - JSON direto da url:
 https://raw.githubusercontent.com/ZXVentures/code-challenge/master/files/pdvs.json
