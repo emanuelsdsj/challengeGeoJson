@@ -82,14 +82,14 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # Change the name, user e password
-#DATABASES = {
-#    'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': 'postgrestest',
-#         'USER': 'postgres',
-#         'PASSWORD': 'teste159753',
-#     }
-#}
+DATABASES = {
+    'default': {
+         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+         'NAME': 'postgrestest',
+         'USER': 'postgres',
+         'PASSWORD': 'teste159753',
+     }
+}
 DATABASES['default'] = dj_database_url.config()
 DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
