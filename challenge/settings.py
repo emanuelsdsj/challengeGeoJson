@@ -14,8 +14,6 @@ import os
 import django_heroku
 import dj_database_url
 
-#GEOS_LIBRARY_PATH = '/app/.geodjango/geos/lib/libgeos_c.so'
-#GDAL_LIBRARY_PATH = '/app/.geodjango/gdal/lib/libgdal.so'
 GEOS_LIBRARY_PATH = os.environ.get('GEOS_LIBRARY_PATH')
 GDAL_LIBRARY_PATH = os.environ.get('GDAL_LIBRARY_PATH')
 
@@ -86,17 +84,20 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 # Change the name, user e password
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'de0otnc1l9s175',
-    }
+         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+         'NAME': 'postgrestest',
+         'USER': 'postgres',
+         'PASSWORD': 'teste159753',
+     }
 }
+
 #db_from_env = dj_database_url.config()
 #DATABASES['default'].update(db_from_env)
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
-DATABASES['default']['NAME'] = 'dcuamhn26041n6'
-DATABASES['default']['USER'] = 'tbscpeiuiwjjvf'
-DATABASES['default']['PASSWORD'] = 'c6bcbfcd628f79bd92c6f128c174df7755fdd2c827b497cc1048ec637cbe1fd0'
+#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+#DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+#DATABASES['default']['NAME'] = 'dcuamhn26041n6'
+#DATABASES['default']['USER'] = 'tbscpeiuiwjjvf'
+#DATABASES['default']['PASSWORD'] = 'c6bcbfcd628f79bd92c6f128c174df7755fdd2c827b497cc1048ec637cbe1fd0'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
