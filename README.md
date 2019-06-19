@@ -34,7 +34,13 @@ eu usei o postgreSQL, não testei outras databases.
      }
  }
 ```
-Iniciar:
+Prepara o banco:
+
+- python manage.py makemigrations
+
+- python manage.py migrate
+
+Inicia o servidor:
 
 - python manage.py runserver
 
