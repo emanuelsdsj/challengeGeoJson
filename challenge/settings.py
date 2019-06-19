@@ -93,7 +93,7 @@ DATABASES = {
 #db_from_env = dj_database_url.config()
 #DATABASES['default'].update(db_from_env)
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.spatialite'
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 DATABASES['default']['NAME'] = 'dcuamhn26041n6'
 DATABASES['default']['USER'] = 'tbscpeiuiwjjvf'
 DATABASES['default']['PASSWORD'] = 'c6bcbfcd628f79bd92c6f128c174df7755fdd2c827b497cc1048ec637cbe1fd0'
