@@ -84,11 +84,20 @@ WSGI_APPLICATION = 'challenge.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.contrib.gis.db.backends.postgis',
-         'NAME': 'postgrestest',
-         'USER': 'postgres',
-         'PASSWORD': 'teste159753',
+         'NAME': 'd2lboamplh8hc7',
+         'USER': 'znfqsssvjksjuy',
+         'PASSWORD': '11e5d9ffce263fab71c319ff81b8a54ead4a579a053026d762f17e62e880dcb2',
      }
 }
+#DATABASES = {
+#    'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'postgrestest',
+#         'USER': 'postgres',
+#         'PASSWORD': 'teste159753',
+#     }
+#}
+
 
 
 # Password validation
