@@ -1,13 +1,3 @@
-Primeiro queria agradecer por esse challenge, pois aprendi muita coisa =)
-
-Nunca trabalhei com GeoJSON, mas nada que uma estudada na documentação do Django, GeoDjango e GeoJSON não resolvesse o problema.
-
-Eu decidi apenas fazer a API como vocês pediram, logo não fiz a interface, testei com a interface padrão do Django Rest Framework e do Admin Django, e também testei com o Postman.
-
-O maior problema que encontrei foi em configurar o ambiente para usar uma das libs que me permitia salvar no banco o MultiPolygon e o Point, pois a documentação não condiz com a realidade, essa lib foi o GDAL e como eu uso o ArchLinux, precisei instalar o GDAL e suas dependências, por isso não precisei usar o pip install. 
-Não sei se esse problema também ocorre no Windows, Ubuntu e Mac, mas acredito que seja mais simples.
-
-
 # config básica
 
 Usei pipenv como virtual machine:
@@ -201,8 +191,3 @@ Retorna o partner mais próximo dado uma localização específica:
 - /gitjson/closest/<<str:lat>>/<<str:lon>>/
 
 Não fiz requisição POST nos testes.
-
-
-Subi para o heroku, mas a free database não suporta GDAL, então só funcionam os serviços de teste, pois eles não precisam
-
-https://challengegeojson.herokuapp.com/gitjson/
